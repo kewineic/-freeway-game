@@ -10,8 +10,15 @@ function limpaTela() {
 function atualizaTela() {
     desenhaFundo();
     desenhaPersonagem();
+
     movimentaCarro();
     desenhaCarro_1();
+
+    movimentaCarro_2();
+    desenhaCarro_2();
+
+    movimentaCarro_3();
+    desenhaCarro_3();
 }
 
 setInterval(atualizaTela, 10)
