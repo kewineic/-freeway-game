@@ -9,11 +9,11 @@ var teclaCima = 38;
 var teclaBaixo = 40;
 var taxaTeclado = 4;
 
-function movimentoPersonagem(evento) {
-    if (evento.keyCode == teclaCima) {
+function movimentoPersonagem(evento){
+    if(evento.keyCode == teclaCima){
         yPersonagem -= taxaTeclado
 
-    } else if (evento.keyCode == teclaBaixo) {
+    }else if(evento.keyCode == teclaBaixo){
         yPersonagem += taxaTeclado
     }
 }

@@ -35,14 +35,14 @@ function desenhaPersonagem(){
     desenhaImg(personagem, xPersonagem, yPersonagem, wPersonagem, hPersonagem);
 }
 
-function desenhaCarro_1(){
-    desenhaImg(carros[0], xCarros[0], yCarros[0], wCarros[0], hCarros[0]); 
-}
-
-function desenhaCarro_2(){
-    desenhaImg(carros[1], xCarros[1], yCarros[1], wCarros[1], hCarros[1]); 
-}
-
-function desenhaCarro_3(){
-    desenhaImg(carros[2], xCarros[2], yCarros[2], wCarros[2], hCarros[2]); 
+function desenhaCarros(){
+    for(let contador = 0; contador < carros.length; contador++){
+        desenhaImg(
+            carros[contador], 
+            xCarros[contador],
+            yCarros[contador], 
+            wCarros[contador], 
+            hCarros[contador],
+        ); 
+    };
 }

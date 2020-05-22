@@ -1,15 +1,18 @@
 
-let xCarros=[540, 540, 540,];
-let yCarros=[40, 95, 150,];
-let wCarros=[50, 50, 50,];
-let hCarros=[40, 40, 40,];
-let velocidadeCarros=[1.2, 1.4, 1.7,];
+var xCarros=[540, 540, 540,];
+var yCarros=[40, 95, 150,];
+var wCarros=[50, 50, 50,];
+var hCarros=[40, 40, 40,];
+var velocidadeCarros=[1.2, 1.4, 1.7,];
 
-//Carro-1
-function movimentaCarros(numCarro, xLimite, xInicial){
-    if(xCarros[numCarro] < xLimite){ 
-        xCarros[numCarro] = xInicial 
+var xValorLimite = 0;
+var xValorInicial = 620;
+
+function movimentaCarros(xValorLimite, xValorInicial){
+    for(let contador = 0; contador < carros.length; contador ++){
+        if(xCarros[contador] < xValorLimite){ 
+            xCarros[contador] = xValorInicial 
+        };
+        xCarros[contador] -= velocidadeCarros[contador];
     };
-
-    xCarros[numCarro] -= velocidadeCarros[numCarro];
 }
