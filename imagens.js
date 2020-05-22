@@ -21,9 +21,11 @@ var hfundoTela = 400;
 //imagens
 var fundoTela = './media/estrada.png'; 
 var personagem = './media/ator-1.png';
-var carro_1 = './media/carro-1.png'; 
-var carro_2 = './media/carro-2.png';
-var carro_3 = './media/carro-3.png';
+let carros = [
+    './media/carro-1.png', 
+    './media/carro-2.png', 
+    './media/carro-3.png',
+];
 
 function desenhaFundo(){
     desenhaImg(fundoTela, xfundoTela, yfundoTela, wfundoTela, hfundoTela);
@@ -34,13 +36,13 @@ function desenhaPersonagem(){
 }
 
 function desenhaCarro_1(){
-    desenhaImg(carro_1, xCarro_1, yCarro_1, wCarro_1, hCarro_1); 
+    desenhaImg(carros[0], xCarros[0], yCarros[0], wCarros[0], hCarros[0]); 
 }
 
 function desenhaCarro_2(){
-    desenhaImg(carro_2, xCarro_2, yCarro_2, wCarro_2, hCarro_2); 
+    desenhaImg(carros[1], xCarros[1], yCarros[1], wCarros[1], hCarros[1]); 
 }
 
 function desenhaCarro_3(){
-    desenhaImg(carro_3, xCarro_3, yCarro_3, wCarro_3, hCarro_3); 
+    desenhaImg(carros[2], xCarros[2], yCarros[2], wCarros[2], hCarros[2]); 
 }

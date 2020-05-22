@@ -11,13 +11,13 @@ function atualizaTela() {
     desenhaFundo();
     desenhaPersonagem();
 
-    movimentaCarro();
+    movimentaCarros(0, 0, 620);
     desenhaCarro_1();
 
-    movimentaCarro_2();
+    movimentaCarros(1, 0, 620);
     desenhaCarro_2();
 
-    movimentaCarro_3();
+    movimentaCarros(2, 0, 620);
     desenhaCarro_3();
 }
 
