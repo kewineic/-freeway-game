@@ -25,6 +25,9 @@ let carros = [
     './media/carro-1.png', 
     './media/carro-2.png', 
     './media/carro-3.png',
+    './media/carro-1.png', 
+    './media/carro-2.png', 
+    './media/carro-3.png',
 ];
 
 function desenhaFundo(){

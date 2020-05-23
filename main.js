@@ -12,6 +12,7 @@ function atualizaTela(){
     desenhaPersonagem();
     desenhaCarros();
     movimentaCarros();
+    verificaColisao();
 }
 
 setInterval(atualizaTela, 10);
