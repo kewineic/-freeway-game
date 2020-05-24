@@ -30,15 +30,11 @@ let carros = [
     './media/carro-3.png',
 ];
 
-function desenhaFundo(){
+function renderizaImagens(){
     desenhaImg(fundoTela, xfundoTela, yfundoTela, wfundoTela, hfundoTela);
-}
 
-function desenhaPersonagem(){
     desenhaImg(personagem, xPersonagem, yPersonagem, wPersonagem, hPersonagem);
-}
 
-function desenhaCarros(){
     for(let contador = 0; contador < carros.length; contador++){
         desenhaImg(
             carros[contador], 

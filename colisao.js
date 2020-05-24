@@ -1,3 +1,7 @@
+function resetaPosicaoY(){
+    yPersonagem = 368;
+}
+
 function verificaColisao(){
     for(let contador = 0; contador < carros.length; contador++){
         if(
@@ -6,8 +10,18 @@ function verificaColisao(){
             yPersonagem < (yCarros[contador] + hCarros[contador]) &&
             yPersonagem + hPersonagem > yCarros[contador]
         ){
-            yPersonagem = 368;
+            resetaPosicaoY();
+            if(meusPontos > 0){
+                meusPontos--
+            }
         };
         
+    };
+}
+
+function verificaSePontuou(){
+    if(yPersonagem < 15){
+        resetaPosicaoY();
+        meusPontos++
     };
 }
