@@ -30,6 +30,17 @@ let carros = [
     './media/carro-3.png',
 ];
 
+function mostraPontuacao(){
+    pincel.font = "bold 16pt Arial";
+    pincel.textAlign = 'center';
+    pincel.fillStyle = 'orange';
+    pincel.strokeStyle = "white";
+    pincel.fillRect(230, 8, 40, 20);
+    pincel.strokeRect(230, 8, 40, 20);
+    pincel.fillStyle = 'white';
+    pincel.fillText(meusPontos, 250, 26);
+}
+
 function renderizaImagens(){
     desenhaImg(fundoTela, xfundoTela, yfundoTela, wfundoTela, hfundoTela);
 
@@ -44,4 +55,6 @@ function renderizaImagens(){
             hCarros[contador],
         ); 
     };
+
+
 }

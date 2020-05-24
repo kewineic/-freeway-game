@@ -11,9 +11,10 @@ function verificaColisao(){
             yPersonagem + hPersonagem > yCarros[contador]
         ){
             resetaPosicaoY();
+            somColisao();
             if(meusPontos > 0){
                 meusPontos--
-            }
+            };
         };
         
     };
@@ -22,6 +23,7 @@ function verificaColisao(){
 function verificaSePontuou(){
     if(yPersonagem < 15){
         resetaPosicaoY();
+        somPontuacao();
         meusPontos++
     };
 }

@@ -4,11 +4,11 @@ tela.width = 600;
 tela.height = 400; 
 
 function atualizaTela(){
-    renderizaImagens()
+    renderizaImagens();
     movimentaCarros();
     verificaColisao();   
     verificaSePontuou();
 }
 
-setInterval(atualizaTela, 15);
+setInterval(atualizaTela, 20);
 setInterval(mostraPontuacao, 1);

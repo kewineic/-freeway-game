@@ -17,7 +17,6 @@ function movimentoPersonagem(evento){
         if(yPersonagem < 365){
             yPersonagem += taxaTeclado
         }
-        
     }
 }
 
@@ -25,14 +24,3 @@ document.onkeydown = movimentoPersonagem;
 
 //Pontos Personagem
 var meusPontos = 0;
-
-function mostraPontuacao(){
-    pincel.font = "bold 16pt Arial";
-    pincel.textAlign = 'center';
-    pincel.fillStyle = 'orange';
-    pincel.strokeStyle = "white";
-    pincel.fillRect(230, 8, 40, 20);
-    pincel.strokeRect(230, 8, 40, 20);
-    pincel.fillStyle = 'white';
-    pincel.fillText(meusPontos, 250, 26);
-}
